@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Number Form | Jamie Powers Do</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+  <script type='text/javascript'>//<![CDATA[
+  //  $(window).load(function(){
+    function calc() {
+      var inputs = $('input.countAmount');
+      
+      var num = parseInt($(input).val(), 10);
+      if (!isNaN(num)) {
+          // It's a valid number, not blank, not "a" or "q", etc.
+      }
+
+      var num = parseInt($(input).val(), 10);
+      if (!isNaN(num)) {
+          // It's a valid number, not blank, not "a" or "q", etc.
+      }
+    }
+
+
+  </script>
+  
+</head>
+
+<body>
+  <h1>Number Form</h1>
+  <p>Assignment 1, Jamie Powers Do</p>
+  
+  <form method="post">  <!--action="php/processmyform.php"-->
+  <fieldset>
+    <h2>Type in a number, and click the "Submit" button.</h2>
+    <p>Repeat as desired, and see calculations happen.</p>
+
+    <ul>
+      <li>
+        <label>Enter a number:</label>
+        <input type="number" name="calc" />
+      </li>
+    </ul>
+
+    <input type="submit" value="Submit" name="calc" /> <input type="reset" value="Reset" name="reset" /> 
+
+  </fieldset>
+  </form>
+  
+  <div id="total">
+  </div>
+
+  <h3>Count</h3>
+  <h3>Sum (Total)</h3>
+  <h3>Average (sum/count)</h3>
+  
+</body>
+
+</html>
