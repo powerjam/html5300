@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Object List | Jamie Powers Do</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  
+  <!-- HOMEWORK 2 - display data
+    create array to create td rows
+    make tr, td for each property
+    append them
+  -->
+    
+  <script type="text/javascript">
+  function AddData() {
+      var x = document.getElementById("year").value;
+      var y = document.getElementById("movie").value;
+      var letters = '/^[a-zA-Z]+$/';
+      if ((parseInt(x) != (x)) && (y == parseInt(y))) {
+          alert("Wrong Value Entered");
+      } else {
+          var rows = "";
+          var movie = document.getElementById("movie").value;;
+          var year = document.getElementById("year").value;
+        
+          rows += "<td>" + movie + "</td><td>" + year + "</td>";
+          var tbody = document.querySelector("#list tbody");
+          var tr = document.createElement("tr");
+
+          tr.innerHTML = rows;
+          tbody.appendChild(tr)
+
+          //
+      }
+  }
+
+  function ResetForm() {
+      document.getElementById("person").reset();
+  }
+  
+  </script>
+  
+  <!-- HOMEWORK ASSIGNMENT TO-DO ITEMS 
+
+  In your JavaScript, create an array variable to hold your data.
+
+  Write a function that creates a table row (tr) for each object in the array, with a cell (td) for each property to be displayed. Append each of these rows to the table body.
+
+  Write a handler for the new-item button. It should hide the table and show the form. It should set a handler for the form's submit button.
+  
+  <!-- HANDLE FORM WHEN SUBMITTED.  handler.
+
+  Write a handler for the submit button that creates an object using the form data and adds that object to the array. Then it should call the first function you wrote to recreate the table with the updated database and show that table, hiding the form.
+
+  Optional: On each row of the table, add buttons to edit and delete the object. This is a bit harder. To make this work, you should give each object a unique ID when you create it, and set that ID as an attribute (e.g. data-id) of the corresponding table row (or of each button), so you can determine which object to edit or delete. For editing, you can reuse the same form, but you'll have to modify the code to distinguish between adding a new object and editing an existing one.
+
+  -->
+  
+</head>
+  
+<body>
+
+  <h2>HTML5 APIs Assignment 2: Object List</h2>
+
+  <div id="data">
+      <form id="person">
+          <br>
+          <br>Movie:
+          <input id="movie" name="movie" type="text">
+          <br>
+          <br>Year:
+          <input id="year" name="year" type="text">
+          <br>
+          <br>
+          <input class="button" type="button" value=" Add " onclick="AddData()"> 
+          <input class="button" type="button" value=" Reset " onclick="ResetForm()"> 
+      </form>
+  </div>
+  <br><br>
+  
+  <h3>Movie List</h3>
+
+  <div id="tab">
+      <table id="list" cellspacing="0px" cellpadding="20px" text-align="center">
+          <thead>
+              <tr>
+                  <td>Movie Title</td>
+                  <td>Year</td>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+  </div>
+  
+  
+  <!--
+  
+  
+  
+  
+
+  <p><strong>HTML5 APIs Assignment 2: Object List</strong></p>
+
+  <div>
+    <input type="submit" value="Add" name="add" />
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>One or more movie titles</td>
+          <td>Released</td>
+        </tr>
+      </tfoot>
+      <tbody id="user-added-movies">
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <div style="display: none;">
+    <form id="newMovie">
+      <p><label for="movieTitle">Title:</label>
+        <input type="text" id="movieTitle" /></p>
+       <p><label for="movieYear">Year:</label>
+        <input type="number" id="movieYear" /></p>
+      
+      <button type="submit" id="submit" onclick="addMovioe();">Submit</button> 
+      <button type="button" id="reset">Cancel</button
+      
+    </form>
+  </div>
+  
+  -->
+  
+  
+<!--  <form id="sign-up-form" method="post" action="php/processmyform.php">
+    <fieldset>
+      <h2>Join Halau</h2>
+      <ul>
+        <li>
+          <label id="f-name-label">First Name*</label>
+          <input type="text" name="first-name" id="f-name-label" placeholder="First Name" required autofocus />
+        </li>
+
+        <li>
+          <label id="l-name-label">Last Name*</label>
+          <input type="text" name="last-name" id="l-name-label" placeholder="Last Name" required />
+        </li>
+
+        <li>
+          <label>Email Address*</label>
+          <input type="email" name="email" required />
+        </li>
+
+        <li>
+          <label id="phone-label">Phone Number*</label>
+          <input type="tel" name="phone" id="phone-label" placeholder="206-555-5555">
+        </li>
+
+        <li>
+          <label>Zip Code*</label>
+          <input type="number" placeholder="98015" pattern="[0-9]*" maxlength="5" min="0" />
+        </li>
+
+        <li>
+          <label>Years of Dance Experience*</label>
+          <input type="number" value="5" placeholder="5" min="0" max="50" name="experience" required />
+        </li>
+
+        <li>
+          <label>Form(s) of Dance You're Interested In* </label>
+          <select name="dance-form" required>
+            <option value="hula">Hula</option>
+            <option value="tahitian">Tahitian</option>
+            <option value="hula-and-tahitian">Hula and Tahitian</option>
+          </select>
+        </li>
+
+      </ul>
+
+      <input type="submit" value="Sign up!" name="submit" />
+
+    </fieldset>
+  </form>
+-->
+  
+
+</body>
+  
+</html>

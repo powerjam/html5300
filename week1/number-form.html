@@ -1,10 +1,57 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 APIs: Assignment 1 Solution</title>
+  </head>
+  <body>
+    <h1>Number Form</h1>
+    <form>
+      <label for="the-number">Enter numbers here:</label>
+      <input type="number" id="the-number" />
+      <button type="submit" id="submit">Submit</button>
+      <button type="button" id="reset">Reset</button>
+      <div id="message"></div>
+    </form>
+
+    <table>
+      <tr>
+        <td>Count</td>
+        <td id="count"></td>
+      </tr>
+      <tr>
+        <td>Sum</td>
+        <td id="sum"></td>
+      </tr>
+      <tr>
+        <td>Average</td>
+        <td id="average"></td>
+      </tr>
+      <tr>
+        <td>Standard Deviation</td>
+        <td id="std-dev"></td>
+      </tr>
+      <tr>
+        <td>Median</td>
+        <td id="median"></td>
+      </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/ArrayStats.js"></script>
+  </body>
+</html>
+
+
+<!--<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Number Form | Jamie Powers Do</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  
+  -->
+  <!--
   <script type='text/javascript'>//<![CDATA[
   //  $(window).load(function(){
     function calc() {
@@ -23,6 +70,12 @@
 
 
   </script>
+--><!--
+  <script type="text/javascript">
+    function addNumbers() {
+      var firstNumber = document.getElementByID("userValue")
+    }
+  </script>
   
 </head>
 
@@ -30,7 +83,7 @@
   <h1>Number Form</h1>
   <p>Assignment 1, Jamie Powers Do</p>
   
-  <form method="post">  <!--action="php/processmyform.php"-->
+  <form method="post">
   <fieldset>
     <h2>Type in a number, and click the "Submit" button.</h2>
     <p>Repeat as desired, and see calculations happen.</p>
@@ -38,7 +91,7 @@
     <ul>
       <li>
         <label>Enter a number:</label>
-        <input type="number" name="calc" />
+        <input type="number" id="userValue" />
       </li>
     </ul>
 
@@ -57,3 +110,4 @@
 </body>
 
 </html>
+-->
