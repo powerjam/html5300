@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>A3: Numbers and Strings | Jamie Powers Do</title>
+    <script type="application/javascript">
+       
+  //TESTING FOR CONCATENATION
+  function myFunction() {
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      var x = document.getElementById("demo");
+      x.innerHTML = fruits.join();
+  }
+      
+    </script>
+  </head>
+  <body>
+    <h1>Numbers and strings form</h1>
+    <form>
+      <label for="the-number">Enter numbers or text:</label>
+      <input type="number" id="the-number" />
+      <button type="submit" id="submit">Submit</button>
+      <button type="button" id="reset">Reset</button>
+      <div id="message"></div>
+    </form>
+
+    <table>
+      <tr>
+        <th>The Numbers</th>
+      </tr>
+      <tr>
+        <td>Count</td>
+        <td id="count"></td>
+      </tr>
+      <tr>
+        <td>Sum</td>
+        <td id="sum"></td>
+      </tr>
+      <tr>
+        <td>Average</td>
+        <td id="average"></td>
+      </tr>
+      <tr>
+        <td>Standard Deviation</td>
+        <td id="std-dev"></td>
+      </tr>
+      <tr>
+        <td>Median</td>
+        <td id="median"></td>
+      </tr>
+    </table>
+    
+    <br><br><br>
+    
+    <!--TESTING OUT JUST CONCATENATION-->
+    <form>
+      <label for="userText">Enter text:</label><br>
+      <textarea rows="4" cols="50" id="userText"></textarea><br>
+      <button type="submit" id="submit">Submit</button>
+      <button type="button" id="reset">Reset</button>
+      <div id="message"></div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/NumbersAndStrings.js"></script>
+    
+    <br><br><br>
+    
+    <!--DEMO FOR CONCATENATION-->
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+  </body>
+</html>
