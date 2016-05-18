@@ -10,62 +10,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script type="application/javascript">   
   </script>
-  <script src="js/inputs.js"></script>
+  <script src="js/rest.js"></script>
 </head>
 <body>
   <h1>Restful Data API</h1>
   
   <h2>Create</h2>
   
-  <table>
-    <tr>
-      <th>Control Type</th>
-      <th>Control</th>
-      <th>Value entered</th>
-    </tr>
-    <tr>
-      <td>input type="checkbox"</td>
-      <td><input type="checkbox" id="the-checkbox"></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>input type="radio"</td>
-      <td><input type="radio" id="the-radio"></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>input type="text"</td>
-      <td><input type="text" id="the-text"> <button type="button" id="button" name="click">submit</button></td>
-      <td><div id="feedback"></div></td>
-    </tr>
-    <tr>
-      <td>input type="textarea"</td>
-      <td>
-        <textarea rows="4" cols="40" id="the-textarea">This is a textarea</textarea>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>input type="select"</td>
-      <td>
-        <select id="the-select">
-          <option value="first">First</option>
-          <option value="second">Second</option>
-          <option value="third">Third</option>
-          <option value="fourth">Fourth</option>
-        </select>
-      </td>
-      <td></td>
-    </tr>
-  </table>
+  <label>Name:</label> <input type="text" id="user-name"> 
+  <label>Age:</label> <input type="text" id="user-age"> 
+  <button type="button" id="button-create" name="click">create</button>
   
-  <br><br><br><br><br>
+  <br><br>
   
   <h2>Read</h2>
+  
+  <h3>List</h3>
+  
+  <button type="button" id="button-read" name="click">read list (list)</button>
+  
+  <br><br>
+  
+  <h3>Single Item</h3>
+  <label>ID:</label> <input type="text" id="user-name"> 
+  <button type="button" id="button-create" name="click">read single item</button>
+
+  <br><br>
 
   <h2>Update</h2>
+  
+  <button type="button" id="button-update" name="click">update</button>
 
+  <br><br>
+  
   <h2>Delete</h2>
+  <label>ID:</label> <input type="text" id="delete-id"> 
+  <button type="button" id="button-delete" name="click">delete</button>
 
 </body>
 </html>
