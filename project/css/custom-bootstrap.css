@@ -1,0 +1,99 @@
+/* BOOTSTRAP - Customizing components */
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Navbar other styling */
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+
+/*@media (min-width:480px) {
+  body { padding-top: 50px; }
+  .navbar-static-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}*/
+
+
+/* Padding to accommodate navbar */
+body {
+  padding-top: 50px;
+}
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  font-size: 0.85em;
+  color: #707070;
+  background-color: #eeeeee;
+  padding: 0 0 10px 0;
+}
+
+
+/* Button styling */
+
+.btn-primary {
+  background-color: #8272C7;
+  border-color: #615594;
+}
+
+.btn-primary:hover {
+  background-color: #615594;
+  border-color: #615594;
+}
+
+
+/* CAROUSEL STYLING */
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height: 200px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  color: #ffffff;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  color: #ffffff;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
+
+/* Figure styling from Bootstrap 4 */
+
+.figure-img {
+    margin-bottom: .5rem;
+    line-height: 1;
+}
+
+.figure-caption {
+  font-size: 90%;
+  color: #818a91;
+  padding: 0;
+}
